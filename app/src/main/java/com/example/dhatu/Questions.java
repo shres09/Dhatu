@@ -1,11 +1,11 @@
 package com.example.dhatu;
 
 public class Questions {
-    public String questions[] = {"What is the language we are creating our app in?"};
+    public String questions[] = {"What is the language we are creating our app in?", "what is your name"};
 
-    public String options[][] = {{"Tamil", "Kannada","Sankskrit","Hindi"}};
+    public String options[][] = {{"Tamil", "Kannada","Sankskrit","Hindi"},{"shresta","aisiri","kuldeep","varshitha"}};
 
-    public String answers[] = {"Sanksrit"};
+    public String answers[] = {"Sanksrit","aisiri"};
 
     public String getquestions(int a){
         String question = questions[a];

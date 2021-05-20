@@ -39,24 +39,24 @@ public class MainActivity extends AppCompatActivity {
 
 
         if(option1.getText()== answers){
-            option1.setOnClickListener(v -> gotocorrectAct());
+            option1.setOnClickListener(v -> opencorrectAct());
             }else{
-            option1.setOnClickListener(v ->  gotowrongAct());
+            option1.setOnClickListener(v ->  openwrongAct());
         }
         if(option2.getText()== answers){
-            option2.setOnClickListener(v ->  gotocorrectAct());
+            option2.setOnClickListener(v ->  opencorrectAct());
         }else{
-            option2.setOnClickListener(v ->  gotowrongAct());
+            option2.setOnClickListener(v ->  openwrongAct());
         }
         if(option3.getText()== answers){
-            option3.setOnClickListener(v ->  gotocorrectAct());
+            option3.setOnClickListener(v ->  opencorrectAct());
         }else{
-            option3.setOnClickListener(v ->  gotowrongAct());
+            option3.setOnClickListener(v ->  openwrongAct());
         }
         if(option4.getText()== answers){
-            option4.setOnClickListener(v ->  gotocorrectAct());
+            option4.setOnClickListener(v ->  opencorrectAct());
         }else{
-            option4.setOnClickListener(v ->  gotowrongAct());
+            option4.setOnClickListener(v ->  openwrongAct());
         }
 
 
@@ -72,12 +72,12 @@ public class MainActivity extends AppCompatActivity {
         answers = questions.getanswer(num);
     }
 
-    public void gotocorrectAct() {
+    public void opencorrectAct() {
         Intent intent = new Intent(this, correctAct.class);
         startActivity(intent);
     }
 
-    public void gotowrongAct() {
+    public void openwrongAct() {
         Intent intent = new Intent(this, wrongAct.class);
         startActivity(intent);
     }
