@@ -8,81 +8,26 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.dhatu.firstSequence.QuestionPage;
+
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView questionda, answer, score;
-    Button option1,option2,option3,option4;
-
-    private  Questions questions = new Questions();
-    private String answers;
-    private int questionsLenght = questions.questions.length;
-    Random r;
+    Button lvl1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        r = new Random();
-
-        option1 = (Button) findViewById(R.id.op1);
-        option2 = (Button) findViewById(R.id.op2);
-        option3 = (Button) findViewById(R.id.op3);
-        option4 = (Button) findViewById(R.id.op4);
-        questionda = (TextView) findViewById(R.id.questionsbro);
-        score = (TextView) findViewById(R.id.score);
-
-        updateQuestions(r.nextInt(questionsLenght));
-
-
-
-        if(option1.getText()== answers){
-            option1.setOnClickListener(v -> opencorrectAct());
-            }else{
-            option1.setOnClickListener(v ->  openwrongAct());
-        }
-        if(option2.getText()== answers){
-            option2.setOnClickListener(v ->  opencorrectAct());
-        }else{
-            option2.setOnClickListener(v ->  openwrongAct());
-        }
-        if(option3.getText()== answers){
-            option3.setOnClickListener(v ->  opencorrectAct());
-        }else{
-            option3.setOnClickListener(v ->  openwrongAct());
-        }
-        if(option4.getText()== answers){
-            option4.setOnClickListener(v ->  opencorrectAct());
-        }else{
-            option4.setOnClickListener(v ->  openwrongAct());
-        }
-
-
+        lvl1 = (Button) findViewById(R.id.lvl1);
+        lvl1.setOnClickListener(v -> openquestions());
     }
 
-    private void updateQuestions(int num){
-        questionda.setText(questions.getquestions(num));
-        option1.setText(questions.getoption1(num));
-        option2.setText(questions.getoption2(num));
-        option3.setText(questions.getoption3(num));
-        option4.setText(questions.getoption4(num));
-
-        answers = questions.getanswer(num);
-    }
-
-    public void opencorrectAct() {
-        Intent intent = new Intent(this, correctAct.class);
+    public void openquestions(){
+        Intent intent = new Intent(this, QuestionPage.class);
         startActivity(intent);
     }
-
-    public void openwrongAct() {
-        Intent intent = new Intent(this, wrongAct.class);
-        startActivity(intent);
-    }
-
-
-
 
 }
