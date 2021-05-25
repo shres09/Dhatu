@@ -8,6 +8,7 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.dhatu.MainActivity;
 import com.example.dhatu.R;
 
 public class fruitW extends AppCompatActivity {
@@ -30,7 +31,7 @@ public class fruitW extends AppCompatActivity {
     }
 
     private void openquestion(){
-        Intent intent = new Intent(this, QuestionPage.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 

@@ -11,34 +11,34 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.dhatu.MainActivity;
 import com.example.dhatu.R;
 
-public class QuestionPage extends AppCompatActivity {
+public class Question3 extends AppCompatActivity {
 
-    Button boy1,girl1,fruit1,back1,next1;
+    Button boy1,girl1,fruit1,back1,nxt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_questions1);
+        setContentView(R.layout.activity_question3);
 
-        boy1 = (Button) findViewById(R.id.boy1);
-        boy1.setOnClickListener(v -> openboyC());
+        boy1 = (Button) findViewById(R.id.boy13);
+        boy1.setOnClickListener(v -> openboyW());
 
-        girl1 = (Button) findViewById(R.id.girl1);
+        girl1 = (Button) findViewById(R.id.girl13);
         girl1.setOnClickListener(v -> opengirlW());
 
-        fruit1 = (Button) findViewById(R.id.fruit1);
-        fruit1.setOnClickListener(v -> openfruitW());
+        fruit1 = (Button) findViewById(R.id.fruit13);
+        fruit1.setOnClickListener(v -> openfruitC());
 
-        back1 = (Button) findViewById(R.id.back1);
+        back1 = (Button) findViewById(R.id.back13);
         back1.setOnClickListener(v -> openmain());
 
-        next1 = (Button) findViewById(R.id.next1);
-        next1.setOnClickListener(v -> opennext());
+        nxt = (Button) findViewById(R.id.nxt3);
+        nxt.setOnClickListener(v -> opennext());
 
 
     }
 
-    public void openboyC(){
-        Intent intent = new Intent(this, boyC.class);
+    public void openboyW(){
+        Intent intent = new Intent(this, boyW.class);
         startActivity(intent);
     }
 
@@ -47,8 +47,8 @@ public class QuestionPage extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openfruitW(){
-        Intent intent = new Intent(this, fruitW.class);
+    public void openfruitC(){
+        Intent intent = new Intent(this, fruitC.class);
         startActivity(intent);
     }
 

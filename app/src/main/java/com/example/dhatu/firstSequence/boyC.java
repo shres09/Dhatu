@@ -17,7 +17,7 @@ import com.example.dhatu.R;
 public class boyC extends AppCompatActivity {
 
     ImageButton boysound;
-    Button back2;
+    Button back2,nxt;
     MediaPlayer boysoundbruh;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,11 @@ public class boyC extends AppCompatActivity {
 
        boysound = (ImageButton) findViewById(R.id.boysound);
        boysound.setOnClickListener(v -> playBoy());
+
+        nxt = (Button) findViewById(R.id.nxt);
+        nxt.setOnClickListener(v -> opennext());
     }
+
 
     private void openquestion(){
         Intent intent = new Intent(this, QuestionPage.class);
@@ -41,6 +45,11 @@ public class boyC extends AppCompatActivity {
 
     public void playBoy(){
         boysoundbruh.start();
+    }
+
+    private void opennext(){
+        Intent intent = new Intent(this, Question2.class);
+        startActivity(intent);
     }
 
 

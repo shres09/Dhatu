@@ -27,6 +27,11 @@
 
         <activity android:name=".firstSequence.WebView1"/>
         <activity android:name=".firstSequence.WebView2"/>
+        <activity android:name=".firstSequence.Question2"/>
+        <activity android:name=".firstSequence.Question3"/>
+        <activity android:name=".firstSequence.fruitC"/>
+        <activity android:name=".firstSequence.boyW"/>
+        <activity android:name=".firstSequence.girlC"/>
     </application>
 
 </manifest>

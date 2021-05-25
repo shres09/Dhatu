@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Question 1: Chose the word for a boy"
+            android:text="Question 3: Chose the word for a fruit"
             android:textColor="#1A0A2D"
             android:textSize="30sp"
             tools:layout_editor_absoluteX="116dp"
@@ -66,14 +66,14 @@
             android:layout_height="165dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="100dp"
-            app:srcCompat="@drawable/boy" />
+            app:srcCompat="@drawable/fruit" />
 
 
 
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/boy1"
+        android:id="@+id/boy13"
         android:layout_width="122dp"
         android:layout_height="91dp"
         android:layout_marginStart="10dp"
@@ -86,22 +86,24 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
     <Button
-        android:id="@+id/girl1"
+        android:id="@+id/girl13"
         android:layout_width="122dp"
         android:layout_height="91dp"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
-        android:layout_marginTop="66dp"
+        android:layout_marginTop="76dp"
         android:text="बाला"
         android:textSize="30sp"
         app:backgroundTint="#00B8D4"
-        app:layout_constraintStart_toEndOf="@+id/boy1"
+        app:layout_constraintStart_toEndOf="@+id/boy13"
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
     <Button
-        android:id="@+id/fruit1"
+        android:id="@+id/fruit13"
         android:layout_width="122dp"
         android:layout_height="91dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
         android:layout_marginTop="66dp"
         android:layout_marginEnd="11dp"
         android:layout_marginRight="11dp"
@@ -109,32 +111,32 @@
         android:textSize="30sp"
         app:backgroundTint="#00B8D4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/girl13"
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
     <Button
-        android:id="@+id/back1"
+        android:id="@+id/back13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginLeft="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         android:layout_marginBottom="44dp"
-        android:text="Go Back"
+        android:text="Main menu"
         app:backgroundTint="#00BFA5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/next1"
+        android:id="@+id/nxt3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginBottom="47dp"
-        android:text="Next Question"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="44dp"
+        android:text="Previous Question"
         app:backgroundTint="#00BFA5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

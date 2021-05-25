@@ -11,39 +11,39 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.dhatu.MainActivity;
 import com.example.dhatu.R;
 
-public class QuestionPage extends AppCompatActivity {
+public class Question2 extends AppCompatActivity {
 
-    Button boy1,girl1,fruit1,back1,next1;
+    Button boy1,girl1,fruit1,back1,nxt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_questions1);
+        setContentView(R.layout.activity_question2);
 
-        boy1 = (Button) findViewById(R.id.boy1);
-        boy1.setOnClickListener(v -> openboyC());
+        boy1 = (Button) findViewById(R.id.boy12);
+        boy1.setOnClickListener(v -> openboyW());
 
-        girl1 = (Button) findViewById(R.id.girl1);
-        girl1.setOnClickListener(v -> opengirlW());
+        girl1 = (Button) findViewById(R.id.girl12);
+        girl1.setOnClickListener(v -> opengirlC());
 
-        fruit1 = (Button) findViewById(R.id.fruit1);
+        fruit1 = (Button) findViewById(R.id.fruit12);
         fruit1.setOnClickListener(v -> openfruitW());
 
-        back1 = (Button) findViewById(R.id.back1);
+        back1 = (Button) findViewById(R.id.back12);
         back1.setOnClickListener(v -> openmain());
 
-        next1 = (Button) findViewById(R.id.next1);
-        next1.setOnClickListener(v -> opennext());
+        nxt = (Button) findViewById(R.id.nxt2);
+        nxt.setOnClickListener(v -> opennext());
 
 
     }
 
-    public void openboyC(){
-        Intent intent = new Intent(this, boyC.class);
+    public void openboyW(){
+        Intent intent = new Intent(this, boyW.class);
         startActivity(intent);
     }
 
-    public void opengirlW(){
-        Intent intent = new Intent(this, girlW.class);
+    public void opengirlC(){
+        Intent intent = new Intent(this, girlC.class);
         startActivity(intent);
     }
 
@@ -58,7 +58,7 @@ public class QuestionPage extends AppCompatActivity {
     }
 
     public void opennext(){
-        Intent intent = new Intent(this, Question2.class);
+        Intent intent = new Intent(this, Question3.class);
         startActivity(intent);
     }
 }
