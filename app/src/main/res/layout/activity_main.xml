@@ -34,4 +34,30 @@
         app:backgroundTint="#00B8D4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/wb1"
+        android:layout_width="172dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        android:text="English to Sanskrit"
+        android:textSize="20sp"
+        app:backgroundTint="#00B8D4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/wb2"
+        android:layout_width="172dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        android:text="Sanskrit Dictionary"
+        android:textSize="20sp"
+        app:backgroundTint="#00B8D4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
