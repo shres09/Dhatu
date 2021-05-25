@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Dhatu">
-        <activity android:name=".MainActivity">
+        <activity android:name=".OpenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,6 +20,7 @@
         <activity android:name=".firstSequence.boyC"/>
         <activity android:name=".firstSequence.girlW"/>
         <activity android:name=".firstSequence.fruitW"/>
+        <activity android:name=".MainActivity"/>
     </application>
 
 </manifest>
